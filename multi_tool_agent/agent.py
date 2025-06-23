@@ -60,7 +60,7 @@ def get_current_time(city: str) -> dict:
 
 def get_events(city: str) -> dict:
     """Fetch events using the free Ticketmaster Discovery API."""
-    TICKETMASTER_API_KEY = "AoAqEDkvPuWAx5SoxW9KM0A8DNno4Agi"  # Get one free at developer.ticketmaster.com
+    TICKETMASTER_API_KEY = ""  # Get one free at developer.ticketmaster.com
     try:
         url = f"https://app.ticketmaster.com/discovery/v2/events.json?apikey={TICKETMASTER_API_KEY}&city={city}"
         res = requests.get(url, timeout=5)
